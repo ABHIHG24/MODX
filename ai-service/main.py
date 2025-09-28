@@ -53,8 +53,8 @@ def serve():
     ai_pb2_grpc.add_AIServiceServicer_to_server(AIServiceServicer(), server)
     
     # Start the server on port 50051
-    print('Starting gRPC server on port 50051...')
-    server.add_insecure_port('[::]:50051')
+    print('Starting gRPC server on port 10000...')
+    server.add_insecure_port('[::]:10000')
     server.start()
     
     try:
